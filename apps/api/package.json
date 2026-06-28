@@ -1,0 +1,39 @@
+{
+  "name": "@zurka/api",
+  "version": "0.1.0",
+  
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/index.js",
+    "db:generate": "drizzle-kit generate",
+    "db:push": "drizzle-kit push",
+    "db:migrate": "drizzle-kit migrate"
+  },
+  "dependencies": {
+    "@hono/node-server": "1.14.x",
+    "@hono/zod-validator": "^0.8.0",
+    "@upstash/redis": "1.35.x",
+    "@zurka/shared-types": "workspace:*",
+    "better-auth": "1.2.x",
+    "dotenv": "16.x",
+    "drizzle-orm": "0.44.x",
+    "hono": "4.7.x",
+    "nanoid": "5.x",
+    "node-cron": "3.0.x",
+    "pg": "8.13.x",
+    "pino": "9.6.x",
+    "resend": "4.x",
+    "slugify": "1.6.x",
+    "stripe": "17.x",
+    "zod": "3.24.x"
+  },
+  "devDependencies": {
+    "@types/node": "22.x",
+    "@types/node-cron": "3.x",
+    "@types/pg": "8.x",
+    "drizzle-kit": "0.30.x",
+    "tsx": "4.x",
+    "typescript": "5.8.x"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "name": "zurka",
+  "private": true,
+  "workspaces": ["apps/*", "packages/*"],
+  "scripts": {
+    "build": "turbo build",
+    "dev": "turbo dev",
+    "lint": "turbo lint",
+    "test": "turbo test",
+    "db:push": "cd apps/api && drizzle-kit push",
+    "db:studio": "cd apps/api && drizzle-kit studio"
+  },
+  "devDependencies": {
+    "turbo": "2.5.x",
+    "typescript": "5.8.x",
+    "prettier": "3.5.x"
+  }
+}

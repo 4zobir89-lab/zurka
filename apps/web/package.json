@@ -1,0 +1,35 @@
+{
+  "name": "@zurka/web",
+  "version": "0.1.0",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.29.2",
+    "@hookform/resolvers": "3.x",
+    "@stripe/react-stripe-js": "3.x",
+    "@stripe/stripe-js": "5.x",
+    "@tanstack/react-query": "5.80.x",
+    "@zurka/shared-types": "workspace:*",
+    "clsx": "2.x",
+    "jose": "^6.2.3",
+    "lucide-react": "0.511.x",
+    "next": "15.3.x",
+    "react": "19.x",
+    "react-dom": "19.x",
+    "react-hook-form": "7.x",
+    "sonner": "2.x",
+    "tailwind-merge": "3.x",
+    "zod": "3.24.x",
+    "zustand": "5.0.x"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "4.1.x",
+    "@types/node": "22.x",
+    "@types/react": "19.x",
+    "tailwindcss": "4.1.x",
+    "typescript": "5.8.x"
+  }
+}
