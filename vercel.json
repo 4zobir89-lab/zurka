@@ -1,6 +1,8 @@
 {
-  "framework": "nextjs",
-  "rootDirectory": "apps/web",
-  "buildCommand": "pnpm build --filter=@zurka/web...",
-  "installCommand": "pnpm install"
+  "build": {
+    "command": "pnpm build --filter=@zurka/web...",
+    "installCommand": "pnpm install",
+    "rootDirectory": "apps/web"
+  },
+  "framework": "nextjs"
 }
