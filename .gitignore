@@ -9,3 +9,4 @@ dist/
 *.log
 out/
 .turbo/
+.vercel

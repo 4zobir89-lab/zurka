@@ -14,5 +14,8 @@
     "turbo": "2.5.x",
     "typescript": "5.8.x",
     "prettier": "3.5.x"
+  },
+  "eslintConfig": {
+    "ignorePatterns": ["**/*"]
   }
 }
