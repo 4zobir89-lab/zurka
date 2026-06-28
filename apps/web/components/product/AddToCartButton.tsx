@@ -11,7 +11,13 @@ export function AddToCartButton({ product }: { product: Product }) {
   const[added, setAdded] = useState(false);
 
   const handleAdd = () => {
-    addItem(product, 1);
+    addItem({
+      productId: product.id,
+      title: product.titleAr || product.title,
+      price: parseFloat(product.sellingPrice),
+      image: product.images[0] || '',
+      quantity: 1,
+    });
     setAdded(true);
     toast.success('Added to cart!', { description: product.title.slice(0, 50) });
     setTimeout(() => setAdded(false), 2000);
